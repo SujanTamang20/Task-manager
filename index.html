@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <h1>Task Management Dashboard</h1>
+        <input type="text" id="taskTitle" placeholder="Task Title">
+        <input type="text" id="taskDescription" placeholder="Task Description">
+        <input type="date" id="taskDueDate">
+        <button id="addTaskButton">Add Task</button>
+        <div id="filters">
+            <input type="text" id="filterTitle" placeholder="Filter by Title">
+            <input type="date" id="filterDueDate">
+        </div>
+        <div id="sortOptions">
+            <select id="sortTasks">
+                <option value="alphabetical">Alphabetical (A-Z)</option>
+                <option value="reverseAlphabetical">Reverse Alphabetical (Z-A)</option>
+                <option value="soonest">Soonest to Latest</option>
+                <option value="latest">Latest to Soonest</option>
+            </select>
+        </div>
+        <div id="taskList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

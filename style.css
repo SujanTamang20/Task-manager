@@ -1,0 +1,152 @@
+body, h1, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    margin: 0;
+}
+
+
+#app {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input, button, select {
+    margin: 8px 0;
+    padding: 10px;
+    width: calc(100% - 20px);
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus, button:focus, select:focus {
+    outline: none;
+    border-color: #6e8efb;
+}
+
+button {
+    background-color: #6e8efb;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #5a76db;
+}
+
+button:disabled {
+    background-color: #b0c4f2;
+    cursor: not-allowed;
+}
+
+select {
+    background-color: #fff;
+}
+
+#taskList {
+    margin-top: 20px;
+}
+
+
+.taskItem {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.taskItem:hover {
+    background: #f1f1f1;
+}
+
+
+.taskItem h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+
+.taskItem p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.taskItem small {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+}
+
+.editTaskButton, .deleteTaskButton {
+    background-color: #ff7675;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.editTaskButton:hover {
+    background-color: #e74c3c;
+}
+
+.deleteTaskButton:hover {
+    background-color: #e74c3c;
+}
+
+.editTaskButton {
+    background-color: #74b9ff;
+}
+
+.editTaskButton:hover {
+    background-color: #4a69bd;
+}
+
+
+#filters, #sortOptions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#filters input, #sortOptions select {
+    flex: 1;
+}
